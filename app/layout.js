@@ -11,21 +11,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <body>
-        <h1>Sistema: Olá mundo!</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/users">Usuários</Link>
-            </li>
-            <li>
-              <Link href="/login">Login</Link>
-            </li>
-          </ul>
-        </nav>
-        
         <div>{children}</div>
       </body>
     </html>

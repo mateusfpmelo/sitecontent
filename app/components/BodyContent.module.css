@@ -1,0 +1,49 @@
+.divColum{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.divBodyResume{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:10% 5% 10% 5%;
+    background-color: white;
+    color: #444242
+
+}
+
+
+.divContentItem{
+    width: 280px;
+    font-size: 24px;
+    height: 80px;
+    background-color: #444242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.divContentItemSelected{
+    width: 280px;
+    font-size: 24px;
+    height: 80px;
+    background-color: #444242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: solid 2px #547FEF;
+}
+
+
+.divContentBodyResume{
+    margin-top:8%;
+    padding: 0 10% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  
