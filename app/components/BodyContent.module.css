@@ -45,7 +45,7 @@
     padding:10% 0 10% 5%;
     width: 50%;
     background-color: #FFCA0E;
-    background-image: url('../../public/images/dog.png'); 
+    /*background-image: url('../../public/images/dog.png'); 
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
