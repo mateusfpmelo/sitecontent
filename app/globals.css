@@ -75,13 +75,20 @@ body {
   gap:20px;
 
 }
-.divContentContactItem{
+.divContentContactTitle{
     width: 280px;
     font-size: 36px;
     height: 80px;
     display: flex;
     align-items: center;
     color:#FFCA0E;
+}
+
+.divContentContactItemLinks{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content: center;
 }
 
 /* Estilos para dispositivos grandes (opcional) */

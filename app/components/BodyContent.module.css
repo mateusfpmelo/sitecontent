@@ -61,6 +61,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap:wrap ;
     align-items: center;
     gap: 40px;
     padding:10% 0 10% 0;
@@ -118,14 +119,7 @@
 
 /* Estilos para dispositivos medios (opcional) */
 @media only screen and (max-width: 900px) {
-    
-    .divBodyResumeSkills{
-        flex-direction: column;
-    }
 
-    .divBodyCareer{
-        flex-direction: column;
-    }
     .divBodyCareerRow1{
         padding:10%;
         width: auto;
@@ -155,10 +149,6 @@
 .divBodyResumeRow2{
     padding:10% 5% 10% 5%;
     width: auto;
-}
-.divBodyResumeSkills{
-    display: flex;
-    flex-direction: column;
 }
 
 }
