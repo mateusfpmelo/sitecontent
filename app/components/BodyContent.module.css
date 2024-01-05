@@ -19,11 +19,16 @@
     padding:10% 0 10% 5%;
     width: 50%;
     background-color: #FFCA0E;
+    background-image: url('../../public/images/dog.png'); 
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
 }
 
 .divBodyResumeRow2{
-    padding:10% 5% 10% 0;
+    padding:10%;
     width: 50%;
+    text-align: justify;
 }
 
 .divBodyResumeSkills{
@@ -37,6 +42,13 @@
     color: #444242;
     transition: opacity 1s ease-in-out;
     margin:8% 0 8% 0;
+}
+
+.divBodyResumeSkillsRow{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
 }
 
 .divContentItem{
@@ -84,6 +96,14 @@
 }
 
 
+/* Estilos para dispositivos medios (opcional) */
+@media only screen and (max-width: 900px) {
+    
+    .divBodyResumeSkills{
+        flex-direction: column;
+    }
+
+}
 
 /* Estilos para dispositivos grandes (opcional) */
 @media only screen and (max-width: 600px) {
@@ -96,6 +116,7 @@
 .divBodyResumeRow1{
     padding:10% 5% 10% 5%;
     width: auto;
+    min-height: 300px;
 }
 
 .divBodyResumeRow2{
@@ -106,4 +127,5 @@
     display: flex;
     flex-direction: column;
 }
+
 }
