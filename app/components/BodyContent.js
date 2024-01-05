@@ -2,6 +2,7 @@
 import styles from './BodyContent.module.css'
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function BodyContent() {
   const [contentResume, setContentResume] = useState(false)
@@ -31,13 +32,6 @@ export function BodyContent() {
     return contentAcademic ? styles.divContentItemSelected : styles.divContentItem
   }
 
-  const handleClickProfessional = () => {
-    setContentProfessional(!contentProfessional)
-  }
-  const classNameCalcProfessional = () => {
-    return contentProfessional ? styles.divContentItemSelected : styles.divContentItem
-  }
-
 
 
   return (
@@ -48,7 +42,7 @@ export function BodyContent() {
         {contentResume &&
             <div className={styles.divBodyResume}>
                 <div className={styles.divBodyResumeRow1}> </div>
-                <div className={styles.divBodyResumeRow2}>Me encantei pelo universo da tecnologia e programação o que me levou a realizar uma transição de carreira, e hoje sou desenvolvedor web com foco em projetos React JS. Recentemente, concluí uma pós-graduação em Projetos de Aplicativos Móveis Multiplataforma, para conhecer front-end mobile, e agora estou iniciando uma nova pós-graduação em Desenvolvimento Full Stack, buscando ampliar meu conhecimento tanto no back-end quanto no front-end, preparando-me para os futuros desafios tecnológicos. E, sou Arquiteto e Urbanista formado pela UNA.</div>
+                <div className={styles.divBodyResumeRow2}>Me encantei pelo universo da tecnologia e programação o que me levou a realizar uma transição de carreira, e hoje sou desenvolvedor web com foco em projetos React JS. Recentemente, concluí uma pós-graduação em Projetos de Aplicativos Móveis Multiplataforma, para conhecer front-end mobile, e agora estou iniciando uma nova pós-graduação em Desenvolvimento Full Stack, buscando ampliar meu conhecimento tanto no back-end quanto no front-end, preparando-me para os futuros desafios tecnológicos. E, sou Arquiteto e Urbanista formado pela UNA. Resido em Belo Horizonte/MG.</div>
             </div>
         }
         
@@ -90,30 +84,24 @@ export function BodyContent() {
         }
         
         <div className={styles.divContentBodyResume}>
-            <div className={classNameCalcAcademic()} onClick={handleClickAcademic}>ACADÊMICO</div>
+            <div className={classNameCalcAcademic()} onClick={handleClickAcademic}>CARREIRA</div>
         </div>
         
         {contentAcademic &&
-            <div className={styles.divBodyResume}>
-                <div>ALTERAR CSS </div>
-                <div>TEXTO</div>
-                <div>TEXTO</div>
+            <div className={styles.divBodyCareer}>
+                <div className={styles.divBodyCareerRow1}>1</div>
+                <div className={styles.divBodyCareerRow2}>2</div>
             </div>
         }
         <div className={styles.divContentBodyResume}>
-            <div className={classNameCalcProfessional()} onClick={handleClickProfessional}>PROFISSIONAL</div>
+            <div className={styles.divContentItemContact} >CONTATO</div> 
+            <Link href={'https://github.com/mateusfpmelo'} target="_blank" ><Image src="/images/git.png"  width="80" height="80" alt="Logo github" /></Link>
+            <Link href={'https://www.instagram.com/mateusfpmelo/'}  target="_blank" ><Image src="/images/insta.png"  width="80" height="80" alt="Logo instagram" /></Link>
+            <Link href={'https://www.facebook.com/mateusfpmelo'}  target="_blank" ><Image src="/images/faceb.png"  width="80" height="80" alt="Logo facebook" /></Link>
+            
+            
         </div>
         
-        {contentProfessional &&
-            <div className={styles.divBodyResume}>
-                <div>ALTERAR CSS </div>
-                <div>TEXTO</div>
-                <div>TEXTO</div>
-            </div>
-        }
-        <div className={styles.divContentBodyResume}>
-            <div className={styles.divContentItemContact} >CONTATO</div>
-        </div>
     </div>
   )
 }
