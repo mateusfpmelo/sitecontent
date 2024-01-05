@@ -2,18 +2,29 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 10%;
 }
 
 .divBodyResume{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
-    padding:10% 5% 10% 5%;
     background-color: white;
-    color: #444242
-
+    color: #444242;
+    transition: opacity 1s ease-in-out;
+    margin:8% 0 8% 0;
 }
 
+.divBodyResumeRow1{
+    padding:10% 0 10% 5%;
+    width: 50%;
+    background-color: #FFCA0E;
+}
+
+.divBodyResumeRow2{
+    padding:10% 5% 10% 0;
+    width: 50%;
+}
 
 .divContentItem{
     width: 280px;
@@ -36,14 +47,47 @@
     align-items: center;
     cursor: pointer;
     border: solid 2px #547FEF;
+    transition: background-color 1s ease-in-out;
 }
 
 
 .divContentBodyResume{
     margin-top:8%;
-    padding: 0 10% 5% 10%;
+    padding: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
     gap:20px;
   }
   
+.divContentItemContact{
+    width: 280px;
+    font-size: 24px;
+    height: 80px;
+    background-color: #FFCA0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+/* Estilos para dispositivos grandes (opcional) */
+@media only screen and (max-width: 600px) {
+  
+    
+.divBodyResume{
+    flex-direction: column;
+}
+  
+.divBodyResumeRow1{
+    padding:10% 5% 10% 5%;
+    width: auto;
+}
+
+.divBodyResumeRow2{
+    padding:10% 5% 10% 5%;
+    width: auto;
+}
+
+}
