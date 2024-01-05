@@ -41,12 +41,12 @@
     background-color: white;
     color: #444242;
     transition: opacity 1s ease-in-out;
-    margin:8% 0 8% 0;
+    margin:2% 0 2% 0;
     transition: max-height 0.5s ease;
 }
 
 .divBodyResumeRow1{
-    padding:10% 0 10% 5%;
+    padding:5% 10%;
     width: 50%;
     background-color: #FFCA0E;
     /*background-image: url('../../public/images/dog.png'); 
@@ -56,7 +56,7 @@
 }
 
 .divBodyResumeRow2{
-    padding:10%;
+    padding:5% 10%;
     width: 50%;
     text-align: justify;
 }
@@ -68,11 +68,11 @@
     flex-wrap:wrap ;
     align-items: center;
     gap: 40px;
-    padding:10% 0 10% 0;
+    padding:8% 0 8% 0;
     background-color: white;
     color: #444242;
     transition: opacity 1s ease-in-out;
-    margin:8% 0 8% 0;
+    margin:2% 0 2% 0;
 }
 
 .divBodyResumeSkillsRow{
@@ -92,20 +92,33 @@
     background-color: white;
     color: #444242;
     transition: opacity 1s ease-in-out;
-    margin:8% 0 8% 0;
+    margin:2% 0 2% 0;
+    align-items: center;
 }
 
 .divBodyCareerRow1{
-    padding:10% 0 10% 5%;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding:4% 10%;
+    width: 65%;
     text-align: justify;
+    gap:20px;
 }
 
 .divBodyCareerRow2{
-    padding:10% 0 10% 5%;
-    width: 50%;
+    padding:5% 10%;
     background-color: #547FEF;
+    width: 35%;
     color: white;
+}
+
+
+.divAcademicRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items: center;
 }
 
 .divAcademicTitle{

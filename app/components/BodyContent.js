@@ -88,9 +88,18 @@ export function BodyContent() {
         {contentAcademic &&
             <div className={styles.divBodyCareer}>
                 <div className={styles.divBodyCareerRow1}>
-                  <div className={styles.divAcademicTitle}>PROFISSIONAL</div>
-                  <div>SOMOSYOUNG - Desenvolvedor Web (JUL/2022 - atualmente)</div>
-                  <div>CIA ULTRAGAZ - Assistente Administrativo (técnico) (2013 - 2021)</div>
+                  <div className={styles.divAcademicTitle}>PROFISSIONAL</div> 
+                  <div className={styles.divAcademicRow}>
+                    <Image src="/images/young.png"  width="150" height="70" alt="Logo young"/>
+                    <div><b>Desenvolvedor Web</b>(JUL/2022 - atualmente)</div>
+                  </div>
+                  <div className={styles.divAcademicRow}>
+                    <Image src="/images/ultra.png"  width="150" height="40" alt="Logo ultragaz"/>
+                    <div><b>Assistente Adm(técnico)</b>(2013 - 2021)</div>
+                  </div>
+                  
+                  
+                  
                 </div>
                 <div className={styles.divBodyCareerRow2}>
                   <div className={styles.divAcademicTitle2}>ACADÊMICO</div>
