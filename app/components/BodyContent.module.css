@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    transition: max-height 0.5s ease;
 }
 
 
@@ -31,6 +32,8 @@
     transition: background-color 1s ease-in-out;
 }
 
+
+
 .divBodyResume{
     display: flex;
     flex-direction: row;
@@ -39,6 +42,7 @@
     color: #444242;
     transition: opacity 1s ease-in-out;
     margin:8% 0 8% 0;
+    transition: max-height 0.5s ease;
 }
 
 .divBodyResumeRow1{
@@ -107,19 +111,23 @@
 .divAcademicTitle{
     font-size: 30px;
     margin-bottom: 3%;
+    transition: opacity 1s ease-in-out;
 }
 
 .divAcademicTitle2{
     font-size: 30px;
     color:#FFCA0E;
     margin-bottom: 3%;
+    transition: opacity 1s ease-in-out;
 }
 
 
 
 /* Estilos para dispositivos medios (opcional) */
 @media only screen and (max-width: 900px) {
-
+    .divBodyCareer{
+        flex-direction: column;
+    }
     .divBodyCareerRow1{
         padding:10%;
         width: auto;
@@ -129,26 +137,17 @@
         padding:10%;
         width: auto;
     }
-
-}
-
-/* Estilos para dispositivos grandes (opcional) */
-@media only screen and (max-width: 600px) {
-  
     
-.divBodyResume{
-    flex-direction: column;
-}
-  
-.divBodyResumeRow1{
-    padding:10% 5% 10% 5%;
-    width: auto;
-    min-height: 300px;
-}
+    
+    .divBodyResumeRow1{
+        display: none;
+        padding:10%;
+        width: auto;
+        min-height: 300px;
+    }
 
-.divBodyResumeRow2{
-    padding:10% 5% 10% 5%;
-    width: auto;
-}
-
+    .divBodyResumeRow2{
+        padding:10%;
+        width: auto;
+    }
 }
