@@ -67,7 +67,22 @@ body {
 }
 
 
+.divContentContact{
+  margin:8% 0 8% 0;
+  padding: 0 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
 
+}
+.divContentContactItem{
+    width: 280px;
+    font-size: 36px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color:#FFCA0E;
+}
 
 /* Estilos para dispositivos grandes (opcional) */
 @media only screen and (max-width: 1360px) {

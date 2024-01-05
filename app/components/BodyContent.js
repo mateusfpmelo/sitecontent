@@ -2,13 +2,11 @@
 import styles from './BodyContent.module.css'
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export function BodyContent() {
   const [contentResume, setContentResume] = useState(false)
   const [contentSkills, setContentSkills] = useState(false)
   const [contentAcademic, setContentAcademic] = useState(false)
-  const [contentProfessional, setContentProfessional] = useState(false)
   
   const handleClickResume = () => {
     setContentResume(!contentResume)
@@ -89,18 +87,21 @@ export function BodyContent() {
         
         {contentAcademic &&
             <div className={styles.divBodyCareer}>
-                <div className={styles.divBodyCareerRow1}>1</div>
-                <div className={styles.divBodyCareerRow2}>2</div>
+                <div className={styles.divBodyCareerRow1}>
+                  <div className={styles.divAcademicTitle}>PROFISSIONAL</div>
+                  <div>SOMOSYOUNG - Desenvolvedor Web (JUL/2022 - atualmente)</div>
+                  <div>CIA ULTRAGAZ - Assistente Administrativo (técnico) (2013 - 2021)</div>
+                </div>
+                <div className={styles.divBodyCareerRow2}>
+                  <div className={styles.divAcademicTitle2}>ACADÊMICO</div>
+                  <div>CURSO (Next JS) - UDEMY (em andamento)</div>
+                  <div>PÓS GRADUÇÃO (Projetos de Apps Móveis Multiplataforma) - DESCOMPLICA (2023)</div>
+                  <div>TRILHA FRONT END - ALURA (2022 - 2023)</div>
+                  <div>GRADUAÇÃO (Arquitetura e Urbanismo) - UNA (2022)</div>
+                  <div>BOOTCAMP(Full Stack) - TAKEBLIP (2021)</div>
+                </div>
             </div>
         }
-        <div className={styles.divContentBodyResume}>
-            <div className={styles.divContentItemContact} >CONTATO</div> 
-            <Link href={'https://github.com/mateusfpmelo'} target="_blank" ><Image src="/images/git.png"  width="80" height="80" alt="Logo github" /></Link>
-            <Link href={'https://www.instagram.com/mateusfpmelo/'}  target="_blank" ><Image src="/images/insta.png"  width="80" height="80" alt="Logo instagram" /></Link>
-            <Link href={'https://www.facebook.com/mateusfpmelo'}  target="_blank" ><Image src="/images/faceb.png"  width="80" height="80" alt="Logo facebook" /></Link>
-            
-            
-        </div>
         
     </div>
   )
