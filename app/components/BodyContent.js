@@ -56,7 +56,7 @@ export function BodyContent() {
         </div>
         
         {contentSkills &&
-            <div className={styles.divBodyResume}>
+            <div className={styles.divBodyResumeSkills}>
                 <div>ALTERAR CSS </div>
                 <div>IMG</div>
                 <div>IMG</div>
