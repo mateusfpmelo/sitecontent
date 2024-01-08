@@ -9,7 +9,7 @@ export default function Home() {
           <div className="divTitle1"><h2>Olá,</h2></div>
           <div className="divTitle2"><h3>me chamo MATEUS</h3></div>
           <div className="divTitle3"><h4>e sou DESENVOLVEDOR WEB</h4></div>
-          <div className="divTitle4"><h4>Desenvolvedor Front-End / Next JS</h4></div>
+          <div className="divTitle4"><h4>Desenvolvedor Front-End / React Next JS</h4></div>
         </div>
         <BodyContent />
         <div className='divContentContact'>
