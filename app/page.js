@@ -17,7 +17,7 @@ export default function Home() {
             <div className='divContentContactItemLinks'>
               <Link href={'https://github.com/mateusfpmelo'} target="_blank" ><Image src="/images/git.png"  width="70" height="70" alt="Logo github" /></Link>
               <Link href={'https://www.instagram.com/mateusfpmelo/'}  target="_blank" ><Image src="/images/insta.png"  width="70" height="70" alt="Logo instagram" /></Link>
-              <Link href={'https://www.facebook.com/mateusfpmelo'}  target="_blank" ><Image src="/images/faceb.png"  width="70" height="70" alt="Logo facebook" /></Link>
+              <Link href={'https://www.linkedin.com/in/mateusfpmelo/'}  target="_blank" ><Image src="/images/linkedin.png"  width="70" height="70" alt="Logo linkedin" /></Link>
             </div>
         </div>
       </div>
