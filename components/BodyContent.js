@@ -1,9 +1,10 @@
 'use client'
-import styles from './BodyContent.module.css'
+
 import React, { useState } from 'react'
+import styles from './BodyContent.module.css'
 import Image from 'next/image'
 
-export function BodyContent() {
+export const BodyContent = () => {
   const [contentResume, setContentResume] = useState(false)
   const [contentSkills, setContentSkills] = useState(false)
   const [contentAcademic, setContentAcademic] = useState(false)

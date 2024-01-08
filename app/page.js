@@ -1,5 +1,4 @@
-'use client'
-import { BodyContent } from "./components/BodyContent"
+import { BodyContent } from "../components/BodyContent"
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -13,7 +12,6 @@ export default function Home() {
           <div className="divTitle4"><h4>Desenvolvedor Front-End / Next JS</h4></div>
         </div>
         <BodyContent />
-        
         <div className='divContentContact'>
             <div className='divContentContactTitle'>CONTATO</div>
             <div className='divContentContactItemLinks'>
@@ -21,9 +19,6 @@ export default function Home() {
               <Link href={'https://www.instagram.com/mateusfpmelo/'}  target="_blank" ><Image src="/images/insta.png"  width="70" height="70" alt="Logo instagram" /></Link>
               <Link href={'https://www.facebook.com/mateusfpmelo'}  target="_blank" ><Image src="/images/faceb.png"  width="70" height="70" alt="Logo facebook" /></Link>
             </div>
-            
-            
-            
         </div>
       </div>
   )

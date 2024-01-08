@@ -87,9 +87,10 @@ body {
 
 .divContentContactItemLinks{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap:20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Estilos para dispositivos grandes (opcional) */
